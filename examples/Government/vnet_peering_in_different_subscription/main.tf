@@ -13,7 +13,7 @@ module "mod_vnet_peerring" {
   org_name           = var.org_name
   workload_name      = var.workload_name
 
-    # Vnet Peerings details
+  # Vnet Peerings details
   enable_different_subscription_peering           = true
   resource_group_src_name                         = azurerm_resource_group.vnet1-peering-network-rg.name
   different_subscription_dest_resource_group_name = azurerm_resource_group.vnet2-peering-network-rg.name

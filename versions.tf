@@ -18,7 +18,7 @@ terraform {
 provider "azurerm" {
   alias = "peer"
   features {}
-  subscription_id = var.alias_subscription_id
-  environment     = var.environment
+  subscription_id            = var.alias_subscription_id
+  environment                = var.environment
   skip_provider_registration = var.environment == "usgovernment" ? true : false
 }

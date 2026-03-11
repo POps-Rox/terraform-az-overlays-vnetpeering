@@ -11,6 +11,6 @@ locals {
 
   vnet_peering_dest_name = coalesce(
     var.custom_peering_dest_name,
-   data.azurenoopsutils_resource_name.vnet_peering_dest.result,
+    data.azurenoopsutils_resource_name.vnet_peering_dest.result,
   )
 }
