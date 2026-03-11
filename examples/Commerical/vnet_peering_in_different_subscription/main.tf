@@ -2,7 +2,7 @@
 # Licensed under the MIT License.
 
 module "mod_vnet_peerring" {
-  #source  = "azurenoops/overlays-vnet-peering/azurerm"
+  #source  = "github.com/POps-Rox/tf-az-overlays-vnetpeering"
   #version = "x.x.x"
   source = "../../.."
 
