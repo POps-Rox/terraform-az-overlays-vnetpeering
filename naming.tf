@@ -4,7 +4,7 @@
 #------------------------------------------------------------
 # Azure NoOps Naming - This should be used on all resource naming
 #------------------------------------------------------------
-data "popsrox_utils_resource_name" "vnet_peering_src" {
+data "popsrox_resource_name" "vnet_peering_src" {
   name          = var.workload_name
   resource_type = "azurerm_virtual_network_peering"
   prefixes      = [var.org_name, var.use_location_short_name ? module.mod_azure_region_lookup.location_short : var.location]
@@ -14,7 +14,7 @@ data "popsrox_utils_resource_name" "vnet_peering_src" {
   separator     = "-"
 }
 
-data "popsrox_utils_resource_name" "vnet_peering_dest" {
+data "popsrox_resource_name" "vnet_peering_dest" {
   name          = var.workload_name
   resource_type = "azurerm_virtual_network_peering"
   prefixes      = [var.org_name, var.use_location_short_name ? module.mod_azure_region_lookup.location_short : var.location]
