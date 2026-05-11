@@ -2,7 +2,7 @@
 # Licensed under the MIT License.
 
 module "mod_vnet_peerring" {
-  #source  = "github.com/POps-Rox/tf-az-overlays-vnetpeering"
+  #source  = "github.com/POps-Rox/terraform-az-overlays-vnetpeering"
   #version = "x.x.x"
   source = "../../.."
 
