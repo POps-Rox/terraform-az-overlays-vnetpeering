@@ -27,3 +27,8 @@ variable "org_name" {
   type        = string
   default     = "anoa"
 }
+
+variable "mgmt_subscription_id" {
+  description = "ID of the subscription hosting the second (management) virtual network. Cross-subscription peering requires a provider configuration targeting this subscription."
+  type        = string
+}
